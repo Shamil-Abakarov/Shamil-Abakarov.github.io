@@ -18,7 +18,7 @@
 			$(".header").removeClass("fixed-menu-style");
 		}
 
-		if(top >= firstElementHeight - 96){
+		if(top >= firstElementHeight - 76){
 			$(".header").addClass("fixed-menu");
 		}
 		else{
@@ -40,7 +40,7 @@
 
 			var prevElement = section.eq(i).offset().top;
 			var	nextElement = section.eq(i).next().offset().top;
-			var	menuHeight = 96;
+			var	menuHeight = 76;
 
 			console.log(section.eq(i).next().offset().top);
 

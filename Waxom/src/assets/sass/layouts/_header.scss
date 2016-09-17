@@ -109,6 +109,9 @@
 			transition: 0.3s;
 			transition-delay: 0.2s;
 		}
+		&:focus{
+			text-decoration: none;
+		}
 	}
 }
 
