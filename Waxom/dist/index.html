@@ -15,21 +15,19 @@
   <body>
 
   	<div class="container-fluid">
-      <div class="slider">
+      <div class="slider menu-section" id="home">
         <header class="header">
           <div class="container">
               <div class="row">
                 <a href="#" class="header-logo"><img src="img/logo.png" alt="logo"></a>
                 <nav class="menu">
                   <ul class="menu-list">
-                    <li class="menu-item active"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">About Us</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Portfolio</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Features</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Blog</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Pricing</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Shortcodes</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+                    <li class="menu-item active"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#about" class="menu-link">About Us</a></li>
+                    <li class="menu-item"><a href="#portfolio" class="menu-link">Portfolio</a></li>
+                    <li class="menu-item"><a href="#mobile" class="menu-link">Mobile</a></li>
+                    <li class="menu-item"><a href="#blog" class="menu-link">Blog</a></li>
+                    <li class="menu-item"><a href="#partners" class="menu-link">Partners</a></li>
                   </ul>
                 </nav>
               </div>
@@ -58,9 +56,9 @@
         </div>
       </div><!-- slider -->
 
-      <div class="container">
+      <div class="container menu-section">
         <div class="row">
-          <section class="services clearfix">
+          <section class="services clearfix" id="about">
             <div class="col-sm-6 col-md-3 col-lg-3 services-item">
               <div class="services-icon services-icon-web"></div>
               <h2 class="services-title">Web & App Design</h2>
@@ -101,11 +99,11 @@
       <section class="text-boxes">
         <div class="container">
           <div class="row">
-            <div class="col-lg-9">
+            <div class="col-sm-12 col-md-8 col-lg-9">
               <h2 class="text-boxes-title"><span>Waxom</span> Multipurpose WordPress Theme</h2>
               <p class="text-boxes-text">Don't Forget to Rate the Template. Thanks so much!</p>
             </div>
-            <div class="col-lg-3">
+            <div class="col-sm-12 col-md-4 col-lg-3">
               <div class="text-boxes-button-container">
                 <button class="text-boxes-button tada-animated">Purchase Now</button>
               </div>
@@ -114,7 +112,7 @@
         </div>
       </section> <!-- text-boxes -->
 
-      <section class="project">
+      <section class="project menu-section" id="portfolio">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2">            
@@ -238,13 +236,13 @@
         </div>
       </section> <!-- project -->
 
-      <section class="mobile">
+      <section class="mobile menu-section" id="mobile">
         <div class="container">
           <div class="row">
-            <div class="col-lg-5">
+            <div class="hidden-sm col-md-5 col-lg-5">
               <img src="img/iphone-in-hand.png" alt="iphone">
             </div>
-            <div class="col-lg-7">
+            <div class="col-sm-12 col-md-7 col-lg-7">
 
               <div class="mobile-text-container">
                 <h2 class="mobile-title">Excellent for Mobile Devices.</h2>
@@ -294,7 +292,7 @@
         </div>
       </section> <!-- counters -->
 
-      <section class="posts">
+      <section class="posts menu-section" id="blog">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2">            
@@ -441,19 +439,19 @@
         </div>
       </section> <!-- posts -->
 
-      <section class="partners">
+      <section class="partners menu-section" id="partners">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-sm-3 col-md-3 col-lg-3">
               <a href="#" class="partners-link"><img src="img/partners-1.png" alt="logo" class="partners-img"></a>
             </div>
-            <div class="col-lg-3">
+            <div class="col-sm-3 col-md-3 col-lg-3">
               <a href="#" class="partners-link"><img src="img/partners-2.png" alt="logo" class="partners-img"></a>
             </div>
-            <div class="col-lg-3">
+            <div class="col-sm-3 col-md-3 col-lg-3">
               <a href="#" class="partners-link"><img src="img/partners-3.png" alt="logo" class="partners-img"></a>
             </div>
-            <div class="col-lg-3">
+            <div class="col-sm-3 col-md-3 col-lg-3">
               <a href="#" class="partners-link"><img src="img/partners-4.png" alt="logo" class="partners-img"></a>
             </div>
           </div>
@@ -465,12 +463,13 @@
         <div class="top-footer">
           <div class="container">
             <div class="row">
-              <div class="col-lg-3">
+              <div class="col-sm-12 col-md-12 col-lg-3">
                 <img src="img/logo.png" alt="logo">
                 <p class="top-footer-waxom-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 <a href="#" class="top-footer-waxom-link">Read More</a>
               </div>
-              <div class="col-lg-3">
+
+              <div class="col-sm-6 col-md-4 col-lg-3">
                 <h2 class="top-footer-title">Recent Posts</h2>
                 <ul>
                   <li>
@@ -494,7 +493,8 @@
                 </ul>
                 
               </div>
-              <div class="col-lg-3">
+
+              <div class="col-sm-6 col-md-4 col-lg-3">
                 <h2 class="top-footer-title">Our Twitter</h2>
                 <ul>
                   <li>
@@ -518,7 +518,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-3">
+
+              <div class="col-sm-12 col-md-4 col-lg-3">
                 <h2 class="top-footer-title">Dribbble Widget</h2>
                 <div class="top-footer-widget-item">
                   <a href="#" class="top-footer-widget-link">
@@ -544,10 +545,11 @@
             </div>
           </div>
         </div> <!-- top-footer -->
+
         <div class="bottom-footer">
           <div class="container">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-sm-6 col-md-6 col-lg-6">
                 <ul class="bottom-footer-list">
                   <li class="bottom-footer-list-item">Copyright © 2015 <span>Waxom</span></li>
                   <li class="bottom-footer-list-item"><a href="#" class="bottom-footer-list-link">Privacy Policy</a></li>
@@ -555,7 +557,7 @@
                   <li class="bottom-footer-list-item"><a href="#" class="bottom-footer-list-link">Support</a></li>
                 </ul>
               </div>
-              <div class="col-lg-6">
+              <div class="col-sm-6 col-md-6 col-lg-6">
                 <ul class="bottom-footer-list bottom-footer-list-right">
                   <li class="bottom-footer-list-item">Designed by <a href="#" class="bottom-footer-list-link"><span>ThemeFire</span></a></li></li>
                   <li class="bottom-footer-list-item">Only ont <a href="#" class="bottom-footer-list-link"><span>Evanto Market</span></a></li></li>
@@ -572,6 +574,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

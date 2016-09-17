@@ -112,9 +112,17 @@
 	}
 }
 
+.fixed-menu-style{
+	position: fixed;
+	top: 0;
+	height: 0;
+	overflow: hidden;
+}
+
 .fixed-menu{
 	position: fixed;
 	top: 0;
 	padding: 10px 0;
 	background-color: #000;
+	height: auto;
 }

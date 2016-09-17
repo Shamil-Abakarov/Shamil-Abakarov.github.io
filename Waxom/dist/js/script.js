@@ -1,16 +1,55 @@
 (function() {
 
+	$('.menu-list .menu-link').click(function() {
+		thisId = $(this).attr('href')
+		$.scrollTo(thisId, 1000, {offset: {top: -76}});
+		return false;
+	});
+
+
 	$(document).scroll(function() {
 		var top = $(document).scrollTop();
 		var firstElementHeight = $(window).height();
 
-		if(top >= firstElementHeight - $(".header").height() + 20){
+		if(top > $(".header").height()){
+			$(".header").addClass("fixed-menu-style");
+		}
+		else if( top < 100){
+			$(".header").removeClass("fixed-menu-style");
+		}
+
+		if(top >= firstElementHeight - 96){
 			$(".header").addClass("fixed-menu");
 		}
 		else{
 			$(".header").removeClass("fixed-menu");
 		}
 
+	});
+
+	
+
+	$(window).scroll(function() {
+		var windowTop = $('body').scrollTop();
+		var	countSection = $('.menu-section').length;
+		var section = $(".menu-section");
+
+		for(var i = 0; i <= countSection - 1; i++){
+
+			$(".menu-item").eq(i).removeClass("active");
+
+			var prevElement = section.eq(i).offset().top;
+			var	nextElement = section.eq(i).next().offset().top;
+			var	menuHeight = 96;
+
+			console.log(section.eq(i).next().offset().top);
+
+			if(windowTop >= prevElement - menuHeight - 1 && windowTop <= nextElement){
+				$(".menu-item").removeClass("active");
+				$(".menu-item").eq(i).addClass("active");
+			}
+
+		}
 	});
 
 	$("#post-carousel").owlCarousel({
@@ -24,6 +63,9 @@
 				items:1
 			},
 			767: {
+				items: 2
+			},
+			992: {
 				items: 3
 			}
 		} 
