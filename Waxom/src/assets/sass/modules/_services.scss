@@ -1,0 +1,76 @@
+.services{
+	padding: 90px 0 80px 0;
+	&-item{
+		position: relative;
+		text-align: center;
+		padding-bottom: 30px;
+		&:after{
+			content:'';
+			display: block;
+			position: absolute;
+			width: 70px;
+			height: 3px;
+			background-color: #f1eee9;
+			left: 50%;
+			bottom: 0;
+			margin-left: -35px;
+			transition: 0.3s;
+		}
+		&:hover:after{
+			background-color: #c7b299;
+		}
+		&:hover .services-title{
+			color: #c7b299;
+		}
+
+		&:hover .services-icon-web{
+			background: url('../img/services-icon-sprite.png') 0px -55px no-repeat;
+		}
+
+		&:hover .services-icon-development{
+			background: url('../img/services-icon-sprite.png') -67px -48px no-repeat;
+		}
+		&:hover .services-icon-customization{
+			background: url('../img/services-icon-sprite.png') -132px -50px no-repeat;
+		}
+		&:hover .services-icon-marketing{
+			background: url('../img/services-icon-sprite.png') -196px -43px no-repeat;
+		}
+	}
+	&-title{
+		font-family: $raleway;
+		color: #555;
+		font-size: 22px;
+		line-height: 22px;
+		font-weight: 600;
+		margin-top: 0;
+		margin-bottom: 15px;
+		transition: 0.3s;
+	}
+	&-text{
+		font-family: $lato;
+		color: #8c8c8c;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 24px;
+	}
+	&-icon{
+		width: 52px;
+		height: 50px;
+		display: inline-block;
+		margin-bottom: 20px;
+		transition: 0.3s;
+		&-web{
+			background: url('../img/services-icon-sprite.png') 2px 0px no-repeat;
+		}
+		&-development{
+			background: url('../img/services-icon-sprite.png') -67px 11px no-repeat;
+		}
+		&-customization{
+			background: url('../img/services-icon-sprite.png') -132px 6px no-repeat;
+		}
+		&-marketing{
+			background: url('../img/services-icon-sprite.png') -196px 8px no-repeat;
+		}
+	}
+}

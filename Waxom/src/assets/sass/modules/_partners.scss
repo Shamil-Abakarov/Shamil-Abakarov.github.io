@@ -1,0 +1,13 @@
+.partners{
+	padding: 140px 0;
+	background:transparent url('../img/partners-bg.jpg');
+	background-size: cover;
+	text-align: center;
+	&-link{
+		display: inline-block;
+		transition: 0.3s;
+		&:hover{
+			transform: scale(1.1);
+		}
+	}
+}

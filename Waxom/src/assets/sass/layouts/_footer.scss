@@ -1,0 +1,136 @@
+.top-footer{
+	background-color: #191919;
+	padding: 75px 0;
+	&-title{
+		margin-top: 25px;
+		color: #fff;
+		font-family: $raleway;
+		font-size: 24px;
+		font-weight: 700;
+	}
+	&-waxom-text{
+		color: #555;
+		font-family: $lato;
+		padding: 30px 0 20px 0;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	&-waxom-link{
+		font-family: $lato;
+		font-size: 14px;
+		color: #fff;
+		&:hover{
+			color: #fff;
+		}
+	}
+	&-post-link{
+		display: inline-block;
+		padding: 20px 0;
+		color: transparent;
+		text-decoration: none;
+		font-family: $lato;
+		&:hover .top-footer-post-date{
+			color: #fff;
+		}
+		&:hover .top-footer-post-text{
+			color: #c7b299;
+		}
+		&:focus{
+			text-decoration: none;
+		}
+	}
+	li{
+		border-top: 1px solid #252525;
+		&:first-child{
+			border-top: none;
+		}
+	}
+	&-post-date{
+		color: #363636;
+		margin-bottom: 10px;
+		font-size: 12px;
+		transition: 0.3s;
+	}
+	&-post-text{
+		color: #555555;
+		font-size: 14px;
+		transition: 0.3s;
+	}
+	&-twitter-link{
+		display: inline-block;
+		padding: 20px 0;
+		color: transparent;
+		text-decoration: none;
+		font-family: $lato;
+		&:hover .top-footer-post-date{
+			color: #fff;
+		}
+		&:hover .top-footer-post-text{
+			color: #c7b299;
+		}
+		&:focus{
+			text-decoration: none;
+		}
+	}
+	&-twitter-text{
+		color: #555555;
+		font-size: 14px;
+		transition: 0.3s;
+		margin-bottom: 10px;
+		span{
+			color: #01b7e9;
+		}
+	}
+	&-twitter-date{
+		color: #363636;
+		font-size: 12px;
+		transition: 0.3s;
+	}
+	&-widget-item{
+		width: 50%;
+		overflow: hidden;
+		float: left;
+		padding-right: 10px;
+		margin-bottom: 10px;
+		img{
+			width: 100%;
+		}
+	}
+}
+
+.bottom-footer{
+	padding: 40px 0 45px 0;
+	background-color: #111;
+	&-list-item{
+		font-family: $lato;
+		font-size: 13px;
+		line-height: 13px;
+		color: #555;
+		float: left;
+		padding:0 10px;
+		border-left: 1px solid #252525;
+		&:first-child{
+			padding-left: 0;
+			border-left: none;
+		}
+		& > span{
+			color: #959595;
+		}
+	}
+	&-list-link{
+		font-family: $lato;
+		font-size: 13px;
+		line-height: 13px;
+		color: #555;
+		transition: 0.3s;
+		&:hover{
+			color: #c7b299;
+		}
+		& > span{
+			color: #959595;
+		}
+	}
+	&-list-right{
+		float: right;
+	}
+}

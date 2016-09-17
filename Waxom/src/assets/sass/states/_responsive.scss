@@ -1,0 +1,161 @@
+@media (min-width: 0) and (max-width: 480px) {
+
+	.slider{
+		position: relative;
+		height: 100%;
+		&-text-container{
+			max-width: 100%;
+			width: 100%;
+		}
+		&-title{
+			font-size: 32px;
+			margin-bottom: 20px;
+			span{
+				font-size: 26px;
+			}
+		}
+		&-text{
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 20px;
+		}
+		.owl-dots{
+			bottom: 10px;
+		}
+	}
+
+	.services{
+		padding: 50px 0 20px 0;
+		&-item{
+			padding-bottom: 30px;
+			margin-bottom: 20px;
+		}
+		&-text{
+			font-size: 18px;
+		}
+	}
+
+	.ideas{
+		padding-top: 50px;
+		&-title{
+			font-size: 34px;
+		}
+		&-text{
+			font-size: 18px;
+		}
+		&-img{
+			width: 100%;
+			height: auto;
+			padding: 0 20px;
+		}
+	}
+
+	.text-boxes{
+		padding: 50px 0;
+		text-align: center;
+		&-title{
+			line-height: 34px;
+			margin-bottom: 20px;
+			span{
+				color: #c7b299;
+			}
+		}
+		&-text{
+			color: #fff;
+			line-height: 24px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.project{
+		padding: 50px 0 50px 0;
+		transition: 0.5s;
+		&-category-wrapper{
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		&-category-list{
+			display: inline-block;
+		}
+		&-category-item{
+			display: inline-block;
+			padding: 10px 20px;
+			font-family: $lato;
+			color: #8c8c8c;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 14px;
+			border: 1px solid #ebebeb;
+			border-radius: 3px;
+			cursor: pointer;
+			margin-left: 10px;
+			margin-bottom: 20px;
+			&:first-child{
+				margin-left: 0;
+			}
+			&.active{
+				background-color: #998675;
+				color: #fff;
+				border-color: #998675;
+			}
+		}
+		&-item{
+			margin: 0 -15px;
+			margin-bottom: 30px;
+		}
+		&-img-wrapper{
+			overflow: hidden;
+			position: relative;
+			height: 150px;
+			&:after{
+				content: '';
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: rgba(0,0,0,0.0);
+				transition: 0.3s;
+			}
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+
+
+	.mobile{
+		padding: 50px 0;
+		background-color: #fbfaf8;
+		&-text-container{
+			padding-top: 30px;
+		}
+		&-title{
+			font-size: 32px;
+			line-height: 34px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		&-text{
+			font-size: 18px;
+			line-height: 28px;
+			margin-bottom: 20px;
+			text-align: justify;		
+		}
+		&-list{
+			padding-left: 0px;
+		}
+		&-list-item{
+			font-size: 18px;
+			line-height: 28px;
+			padding-left: 30px;
+			margin-bottom: 20px;
+		}
+		img{
+			width: 100%;
+		}
+	}
+	
+}

@@ -1,0 +1,44 @@
+.counters{
+	padding: 70px 0 60px 0;
+	background-color: #f4f5f8;
+	background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+	&-item{
+		width: 20%;
+		text-align: center;
+		float: left;
+	}
+	&-icon{
+		margin-bottom: 25px;
+	}
+	&-count{
+		font-family: $lato;
+		font-size: 48px;
+		color: #fff;
+		line-height: 48px;
+		font-weight: 300;
+		line-height: 36px;
+		margin-bottom: 20px;
+	}
+	&-name{
+		color: #c7b299;
+		position: relative;
+		font-family: $lato;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 14px;
+		margin: 0;
+		padding-bottom: 30px;
+		text-transform: uppercase;
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 30px;
+			height: 2px;
+			background-color: #fff;
+			left: 50%;
+			margin-left: -15px;
+			bottom: 0;
+		}
+	}
+}
