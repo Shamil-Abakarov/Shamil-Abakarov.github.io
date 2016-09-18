@@ -6,6 +6,19 @@
 		return false;
 	});
 
+	$('.menu-icon').click(function() {
+		if($('.menu-list').css('display') == 'none'){
+			$('.menu-list').slideDown();
+		}
+		else{
+			$('.menu-list').slideUp();
+		}
+		
+	});
+
+	$(window).resize(function() {
+		$('.menu-list').css('display','');
+	});
 
 	$(document).scroll(function() {
 		var top = $(document).scrollTop();
@@ -14,15 +27,13 @@
 		if(top > $(".header").height()){
 			$(".header").addClass("fixed-menu-style");
 		}
-		else if( top < 100){
-			$(".header").removeClass("fixed-menu-style");
-		}
 
 		if(top >= firstElementHeight - 76){
 			$(".header").addClass("fixed-menu");
 		}
 		else{
 			$(".header").removeClass("fixed-menu");
+			$(".header").removeClass("fixed-menu-style");
 		}
 
 	});
@@ -33,6 +44,9 @@
 		var windowTop = $('body').scrollTop();
 		var	countSection = $('.menu-section').length;
 		var section = $(".menu-section");
+		var aa = $(".menu-item .active").index();
+
+		console.log(aa);
 
 		for(var i = 0; i <= countSection - 1; i++){
 
@@ -42,15 +56,33 @@
 			var	nextElement = section.eq(i).next().offset().top;
 			var	menuHeight = 76;
 
-			console.log(section.eq(i).next().offset().top);
-
 			if(windowTop >= prevElement - menuHeight - 1 && windowTop <= nextElement){
-				$(".menu-item").removeClass("active");
-				$(".menu-item").eq(i).addClass("active");
+				if($(".menu-item").eq(i).hasClass(".active")){
+					alert('aaa');
+				}
+				else{
+					$(".menu-item").removeClass("active");
+					$(".menu-item").eq(i).addClass("active");
+				}
 			}
 
 		}
 	});
+
+	// function onScroll(event){
+	//     var scrollPos = $(document).scrollTop();
+	//     $('.menu-item').each(function () {
+	//         var currLink = $(this);
+	//         var refElement = $(currLink.attr("href"));
+	//         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+	//             $('.menu-item').removeClass("active");
+	//             currLink.addClass("active");
+	//         }
+	//         else{
+	//             currLink.removeClass("active");
+	//         }
+	//     });
+	// }
 
 	$("#post-carousel").owlCarousel({
 		items:3,

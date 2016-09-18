@@ -1,5 +1,81 @@
-@media (min-width: 0) and (max-width: 480px) {
+@media (min-width: 0) and (max-width: 767px) {
 
+	.header{
+		transition: 0.5s;
+		&-logo{
+			float: none;
+		}
+		position: absolute;
+		width: 100%;
+		top: 0px;
+		padding: 10px;
+		background-color: #000;
+		z-index: 9999;
+		.menu{
+			display: block;
+			width: 100%;
+			float: none;
+		}
+		.menu-list{
+			padding: 0px;
+			display: none;
+		}
+		.menu-item{
+			position: relative;
+			float: none;
+			padding: 20px 20px;
+			margin: 0px;
+			border-top: 1px solid #fff;
+			&.active{
+				.menu-link{
+					color: #c7b299;
+				}
+			}
+			&:first-child{
+				border-top: none;
+			}
+			
+			&:hover:before{
+				width: 0%;
+				background-color: #c7b299;
+			}
+			&:hover:after{
+				width: 0%;
+				background-color: #c7b299;
+			}
+			&:hover .menu-link{
+				color: #c7b299;
+			}
+			&:hover .menu-link:before{
+				height: 0%;
+				background-color: #c7b299;
+			}
+			&:hover .menu-link:after{
+				height: 0%;
+				background-color: #c7b299;
+			}
+		}
+	}
+
+	.menu-icon{
+		display: block;
+	}
+
+	.fixed-menu-style{
+		position: fixed;
+		top: -100%;
+		height: 0;
+		overflow: hidden;
+	}
+
+	.fixed-menu{
+		position: fixed;
+		top: 0;
+		padding: 10px 0;
+		background-color: #000;
+		height: auto;
+	}
+	
 	.slider{
 		position: relative;
 		height: 100%;
@@ -164,10 +240,22 @@
 			margin-bottom: 40px;
 		}
 	}
+
+	.posts{
+		&-text-wrapper{
+			padding: 0 10px;
+		}
+	}
 	
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+	.header{
+		.menu-item{
+			margin: 0;
+		}
+	}
 
 	.services{
 		padding: 80px 0 50px 0;

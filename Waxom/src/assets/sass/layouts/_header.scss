@@ -20,17 +20,8 @@
 		padding: 7px 20px;
 		margin: 0 5px;
 		&.active{
-			&:before{
-				width: 80%;
-			}
-			&:after{
-				width: 80%;
-			}
-			.menu-link:before{
-				height: 100%;
-			}
-			.menu-link:after{
-				height: 100%;
+			.menu-link{
+				color: #c7b299;
 			}
 		}
 		&:first-child{
@@ -117,7 +108,7 @@
 
 .fixed-menu-style{
 	position: fixed;
-	top: 0;
+	top: -100%;
 	height: 0;
 	overflow: hidden;
 }
@@ -128,4 +119,26 @@
 	padding: 10px 0;
 	background-color: #000;
 	height: auto;
+}
+
+.menu-icon{
+	width: 50px;
+	position: absolute;
+	top: 20px;
+	height: 35px;
+	right: 10px;
+	display: none;
+}
+
+.menu-line{
+	display: block;
+	width: 50px;
+	height: 5px;
+	margin-bottom: 10px;
+	padding: 0;
+	background-color: #fff;
+}
+
+.menu-line-3{
+
 }
