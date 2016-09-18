@@ -69,21 +69,6 @@
 		}
 	});
 
-	// function onScroll(event){
-	//     var scrollPos = $(document).scrollTop();
-	//     $('.menu-item').each(function () {
-	//         var currLink = $(this);
-	//         var refElement = $(currLink.attr("href"));
-	//         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-	//             $('.menu-item').removeClass("active");
-	//             currLink.addClass("active");
-	//         }
-	//         else{
-	//             currLink.removeClass("active");
-	//         }
-	//     });
-	// }
-
 	$("#post-carousel").owlCarousel({
 		items:3,
 		nav: true,
@@ -94,7 +79,7 @@
 			0: {
 				items:1
 			},
-			767: {
+			640: {
 				items: 2
 			},
 			992: {
