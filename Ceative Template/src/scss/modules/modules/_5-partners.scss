@@ -1,0 +1,31 @@
+.partners{
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	padding: 90px 0 50px 0;
+	background-color: #444444;
+	&-title{
+		font-size: 30px;
+		letter-spacing: 0.6;
+		font-weight: 300;
+		color: #ffffff;
+		margin-bottom: 75px;
+	}
+	&-link{
+		display: inline-block;
+		position: relative;
+		margin-bottom: 40px;
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 0%;
+			height: 4px;
+			background-color: #fff;
+			bottom: -10px;
+			transition: 0.5s;
+		}
+		&:hover:after{
+			width: 100%;
+		}
+	}
+}
