@@ -1,0 +1,58 @@
+.contact{
+	text-align: center;
+	padding: 40px 0 35px 0;
+	background-color: #e9edef;
+	border-bottom: 1px solid #cdd8dd;
+	&-form{
+		input[type="text"]{
+			font-family: 'Exo', sans-serif;
+			width: 100%;
+			height: 63px;
+			background-color: #f2f4f5;
+			border: 1px solid #b6c6d0;
+			padding: 0 20px;
+			border-radius: 10px;
+			font-size: 20px;
+			font-weight: 100;
+			color: #919da5;
+			margin-bottom: 20px;
+			&:focus{
+				border-color: #394e5b;
+				color: #394e5b;
+			}
+		}
+		textarea{
+			font-family: 'Exo', sans-serif;
+			width: 100%;
+			background-color: #f2f4f5;
+			border: 1px solid #b6c6d0;
+			padding: 20px 20px;
+			border-radius: 10px;
+			font-size: 20px;
+			font-weight: 100;
+			color: #919da5;
+			margin-bottom: 30px;
+			&:focus{
+				border-color: #394e5b;
+				color: #394e5b;
+			}
+		}
+	}
+	&-send-message{
+		font-family: 'Ubuntu', sans-serif;
+		display: inline-block;
+		font-size: 20px;
+		line-height: 20px;
+		border: none;
+		cursor: pointer;
+		background-color: #d16262;
+		color: #fff;
+		font-weight: bold;
+		letter-spacing: 2px;
+		border-radius: 5px;
+		padding: 16px 50px;
+		-webkit-box-shadow: 0px 2px 0px 0px rgba(149,61,61,1);
+		-moz-box-shadow: 0px 2px 0px 0px rgba(149,61,61,1);
+		box-shadow: 0px 2px 0px 0px rgba(149,61,61,1);
+	}
+}

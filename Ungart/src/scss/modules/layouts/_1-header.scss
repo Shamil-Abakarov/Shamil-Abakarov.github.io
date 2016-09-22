@@ -1,0 +1,68 @@
+.header{
+	position: fixed;
+	width: 100%;
+	background-color: #394e5b;
+	min-height: 80px;
+	border-bottom: 1px solid #668294;
+	z-index: 9000;
+	&-logo{
+		float: left;
+		font-size: 32px;
+		color: #fff;
+		text-transform: uppercase;
+		line-height: 80px;
+		margin-left: 50px;
+	}
+}
+
+#menu-bars{
+	display: none;
+}
+
+.menu{
+	display: block;
+	float: right;
+	margin-right: 35px;
+	&-item{
+		float: left;
+		&:after{
+			content: '/';
+			color: #849fb1;
+		}
+		&:last-child:after{
+			content: '';
+		}
+	}
+	&-link{
+		position: relative;
+		font-size: 16px;
+		letter-spacing: 2px;
+		margin: 0 15px;
+		color: #849fb1;
+		line-height: 80px;
+		transition: 0.3s;
+		&.active{
+			color: #fff;
+			&:after{
+				display: none;
+			}
+		}
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 0%;
+			left: 15%;
+			height: 2px;
+			bottom: -10px;
+			background-color: #dd6359;
+			transition: 0.5s;
+		}
+		&:hover{
+			color: #fff;
+		}
+		&:hover:after{
+			width: 70%;
+		}
+	}
+}
