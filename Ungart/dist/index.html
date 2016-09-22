@@ -68,7 +68,7 @@
       </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio" >
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-10 col-md-offset-1">
@@ -76,15 +76,19 @@
             <div class="portfolio-bars-container">
               <i class="fa fa-bars portfolio-bars" aria-hidden="true" id="portfolio-bars"></i>
               <ul class="portfolio-categories-list">
-                <li class="portfolio-categories-item active" id="all-prodject">All Projects</li>
-                <li class="portfolio-categories-item" id="web-design">Web Design</li>
-                <li class="portfolio-categories-item" id="psd-template">Psd Template</li>
-                <li class="portfolio-categories-item" id="mobile-app">Mobile App</li>
+                <li class="portfolio-categories-item active filter" data-filter="all">All Projects</li>
+                <li class="portfolio-categories-item filter" data-filter=".web-design">Web Design</li>
+                <li class="portfolio-categories-item filter" data-filter=".psd-template">Psd Template</li>
+                <li class="portfolio-categories-item filter" data-filter=".mobile-app">Mobile App</li>
               </ul>
             </div>
             <p class="portfolio-active-category">All Projects</p>
 
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item-container web-design">
+          </div>
+
+          <div class="col-sm-12 col-md-10 col-md-offset-1" id="mix-container">
+
+            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item-container mix web-design">
               <div class="portfolio-item ">
                 <img src="img/work-1.jpg" alt="work" class="portfolio-img">
                 <a href="#" class="portfolio-item-mask">
@@ -96,7 +100,7 @@
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item-container psd-template">
+            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item-container mix psd-template">
               <div class="portfolio-item">
                 <img src="img/work-4.jpg" alt="work" class="portfolio-img">
                 <a href="#" class="portfolio-item-mask">
@@ -108,7 +112,7 @@
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item-container mobile-app">
+            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item-container mix mobile-app">
               <div class="portfolio-item mobile-app">
                 <img src="img/work-2.jpg" alt="work" class="portfolio-img">
                 <a href="#" class="portfolio-item-mask">
@@ -120,7 +124,7 @@
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item-container web-design">
+            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item-container mix web-design">
               <div class="portfolio-item web-design">
                 <img src="img/work-5.jpg" alt="work" class="portfolio-img">
                 <a href="#" class="portfolio-item-mask">
@@ -132,7 +136,7 @@
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item-container mobile-app">
+            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item-container mix mobile-app">
               <div class="portfolio-item">
                 <img src="img/work-3.jpg" alt="work" class="portfolio-img">
                 <a href="#" class="portfolio-item-mask">
@@ -144,7 +148,7 @@
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item-container mobile-app">
+            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item-container mix mobile-app">
               <div class="portfolio-item">
                 <img src="img/work-6.jpg" alt="work" class="portfolio-img">
                 <a href="#" class="portfolio-item-mask">
@@ -292,6 +296,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/jquery.scrollTo-1.4.3.1.js"></script>
     <script src="js/main.js"></script>
   </body>

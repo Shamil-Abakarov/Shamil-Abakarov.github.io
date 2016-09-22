@@ -27,16 +27,8 @@ window.onload = function() {
 	});
 
 	$(".portfolio-categories-item").click(function() {
-		$(this).addClass("active").siblings().removeClass("active");
 		var text = $(this).text();
 		$(".portfolio-active-category").text(text);
-		if($(this).attr('id') == 'all-prodject'){
-			$(".portfolio-item-container").show();
-		}
-		else{
-			$(".portfolio-item-container").hide();
-			$("." + this.id).show();
-		}
 	});
 
 	$('.menu .menu-link').click(function(){
@@ -58,6 +50,8 @@ window.onload = function() {
   		}
   	}
   });
+
+  $("#mix-container").mixItUp();
 
 
 }
